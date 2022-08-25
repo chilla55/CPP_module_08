@@ -6,7 +6,7 @@
 /*   By: agrotzsc <agrotzsc@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 12:58:38 by agrotzsc          #+#    #+#             */
-/*   Updated: 2022/08/25 16:55:52 by agrotzsc         ###   ########.fr       */
+/*   Updated: 2022/08/25 17:04:46 by agrotzsc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ template <typename T> MutantStack<T>::~MutantStack(void)
 {
 }
 
-template <typename T> MutantStack<T>::MutantStack(const MutantStack<T> &obj)
+template <typename T> MutantStack<T>::MutantStack(const MutantStack<T> &obj) : std::stack<T>(obj)
 {
 	*this = obj;
 }
